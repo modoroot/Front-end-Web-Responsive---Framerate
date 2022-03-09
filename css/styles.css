@@ -94,7 +94,7 @@ img {
     gap: 30px;
 }
 
-.showcase-text{
+.showcase-text {
     animation: slideLeft 1s ease-in;
 }
 
@@ -157,15 +157,18 @@ img {
 .stats-heading {
     max-width: 500px;
     margin: auto;
+    text-align: center;
 }
 
 .stats .grid h3 {
     font-size: 35px;
+    text-align: center;
 }
 
 .stats .grid p {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .cli .grid {
@@ -323,36 +326,41 @@ img {
 }
 
 /* Animaciones */
-@keyframes slideLeft{
+@keyframes slideLeft {
     0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
 
-@keyframes slideRight{
+@keyframes slideRight {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
 
-@keyframes slideTop{
+@keyframes slideTop {
     0% {
         transform: translateY(-100%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
-@keyframes slideBottom{
+
+@keyframes slideBottom {
     0% {
         transform: translateY(100%);
     }
+
     100% {
         transform: translateX(0);
     }
@@ -403,6 +411,7 @@ img {
 }
 
 /*Multiplicador de la fuente base*/
+/* Esto es como un "mini framework" del tamaño de la letra */
 .my-1 {
     margin: 1rem 0;
 }
